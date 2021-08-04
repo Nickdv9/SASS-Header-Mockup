@@ -1,3 +1,11 @@
 $font-brand: "Pacifico", cursive;
 $font-heading: "Noto Serif", serif;
 $font-primary: Arial, Helvetica, sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
