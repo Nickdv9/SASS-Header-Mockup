@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+$font-brand: "Pacifico", cursive;
+$font-heading: "Noto Serif", serif;
+$font-primary: Arial, Helvetica, sans-serif;
+
+.top-nav {
+  h1 {
+    font-family: $font-brand;
+    color: adjust-brand-text-color($brand-text-color-contrast);
+  }
+}
+
+h2 {
+  font-family: $font-heading;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: adjust-heading-text-color($heading-text-color-contrast);
+}

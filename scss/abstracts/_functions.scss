@@ -1,0 +1,37 @@
+// adjust text color based on bg
+@use 'colors' as *;
+
+@function adjust-text-color($color) {
+  @if (lightness($color) < 40) {
+    @return $text-color-contrast;
+  } @else {
+    @return $text-color;
+  }
+}
+
+// adjust heading text color based on bg
+@function adjust-heading-text-color($color) {
+  @if (lightness($color) < 40) {
+    @return $heading-text-color-contrast;
+  } @else {
+    @return $heading-text-color;
+  }
+}
+
+// adjust brand text color based on bg
+@function adjust-brand-text-color($color) {
+  @if (lightness($color) < 40) {
+    @return $brand-text-color-contrast;
+  } @else {
+    @return $brand-text-color;
+  }
+}
+
+// adjust nav text color based on bg
+@function adjust-nav-text-color($color) {
+  @if (lightness($color) < 40) {
+    @return $nav-text-color-contrast;
+  } @else {
+    @return $nav-text-color;
+  }
+}

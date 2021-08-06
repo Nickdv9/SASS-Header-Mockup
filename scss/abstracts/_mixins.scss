@@ -1,0 +1,7 @@
+// adjust header bg and text color
+@use 'functions' as *;
+
+@mixin adjust-header-colors($color) {
+  background-color: $color;
+  color: adjust-text-color($color);
+}
