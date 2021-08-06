@@ -1,0 +1,20 @@
+// Margin and Padding in ems
+$spacing: (1, 2, 3);
+
+@each $space in $spacing {
+  .px-#{$space} {
+    padding: 0em #{$space}em;
+  }
+
+  .py-#{$space} {
+    padding: #{$space}em 0em;
+  }
+
+  .mx-#{$space} {
+    padding: 0em #{$space};
+  }
+
+  .my-#{$space} {
+    padding: #{$space} 0em;
+  }
+}
