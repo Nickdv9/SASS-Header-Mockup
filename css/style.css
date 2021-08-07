@@ -66,6 +66,9 @@ p {
 .top-nav li {
   padding: 0.625em;
 }
+.top-nav li:nth-child(3) {
+  padding-right: 0em;
+}
 .top-nav a {
   text-decoration: none;
   color: #834753;
@@ -93,7 +96,7 @@ p {
 .header-container {
   width: min(90%, 60rem);
   margin-inline: auto;
-  padding: 0 2em 2em;
+  padding-bottom: 2em;
 }
 
 .px-1 {
