@@ -1,7 +1,8 @@
 @use 'sass:map';
 
 $breakpoints: (
-  small: 40em,
+  small: 37em,
+  miniature: 22em,
 );
 
 @mixin media($key) {

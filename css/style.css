@@ -55,6 +55,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .top-nav ul {
   display: flex;
@@ -72,6 +73,16 @@ img {
 .top-nav a:hover {
   font-weight: 600;
 }
+@media (max-width: 37em) {
+  .top-nav li {
+    padding-left: 0em;
+  }
+}
+@media (max-width: 22em) {
+  .top-nav {
+    justify-content: space-evenly;
+  }
+}
 
 .header {
   background-color: #b1d9d1;
@@ -87,6 +98,19 @@ img {
 .header-content div:nth-child(2) {
   flex-basis: 100%;
   padding-left: 2em;
+}
+@media (max-width: 37em) {
+  .header-content {
+    text-align: center;
+  }
+  .header-content img {
+    display: none;
+  }
+}
+@media (max-width: 37em) {
+  .header-content {
+    flex-direction: column;
+  }
 }
 
 .header-container {

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   ul {
     display: flex;
@@ -20,5 +21,13 @@
   }
   a:hover {
     font-weight: 600;
+  }
+  @include media(small) {
+    li {
+      padding-left: 0em;
+    }
+  }
+  @include media(miniature) {
+    justify-content: space-evenly;
   }
 }

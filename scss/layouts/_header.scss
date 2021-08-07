@@ -15,5 +15,16 @@
       flex-basis: 100%;
       padding-left: 2em;
     }
+
+    @include media(small) {
+      text-align: center;
+
+      img {
+        display: none;
+      }
+    }
+    @include media(small) {
+      flex-direction: column;
+    }
   }
 }
